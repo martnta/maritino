@@ -1,26 +1,27 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Roboto_Mono } from 'next/font/google'
+import './globals.css'
+import Footer from '@/components/footer'
+import Header from '@/components/Header'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto_Mono({ subsets: ['latin'], weight: ['400'] })
 
-export const metadata: Metadata = {
-  title: "Maritino",
-  description: "Music official",
-};
+export const metadata = {
+  title: 'Maritino',
+  description: 'Official website of maritino',
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-        <Header />
-      <body className={inter.className}>{children}</body>
-      <Footer />
+      <body className={`${inter.className} min-h-screen bg-gradient-to-b from-purple-900 to-black text-gray`}>
+        <Header/>
+        {children}
+        <Footer/>
+      </body>
     </html>
-  );
+  )
 }
