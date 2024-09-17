@@ -89,7 +89,7 @@ export default function Home() {
         <div className="container mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">About Maritino</h2>
           <p className="text-base sm:text-lg mb-4">
-            Maritino is an indie folk artist known for his soulful african melodies and heartfelt lyrics. 
+            Maritino is a Malawian artist known for his soulful african melodies and heartfelt lyrics. 
             Drawing inspiration from nature and his interractions with all sorts of people, Maritino crafts songs that resonate 
             with listeners around the world.
           </p>
